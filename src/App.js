@@ -49,9 +49,9 @@ export default function App() {
 
   return (
     <div className="App">
-      <h2>{"Restaurant Recommendation App "}</h2>
+      <h2>{"Restaurant Recommendation App"}</h2>
       <p>Select a category to get started.</p>
-      <div className="category">
+      <div className="Category">
         {categories.map(function (item) {
           return (
             <button key={item} onClick={() => clickHandler(item)}>
@@ -59,12 +59,11 @@ export default function App() {
             </button>
           );
         })}
-        <hr />
       </div>
       {rest.map(function (item) {
         return (
-          <div key={item} className="resaturant">
-            <p>{item}</p>
+          <div key={item} className="Restaurant">
+            <h3>{item}</h3>
             <small>{rating[item]}</small>
           </div>
         );

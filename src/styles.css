@@ -2,3 +2,28 @@
   font-family: sans-serif;
   text-align: center;
 }
+h2 {
+  color: pink;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+.Category {
+  margin: 1.5rem;
+}
+.Category > button {
+  color: #d64161;
+  //background-color: #dac292;
+  border-radius: 5%;
+  padding: 0.5rem;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+.Restaurant > h3 {
+  color: #50394c;
+}
+.Restaurant > small {
+  font-size: 1rem;
+  color: #f18973;
+}
