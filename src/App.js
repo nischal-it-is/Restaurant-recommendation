@@ -17,7 +17,29 @@ export default function App() {
     "North Indian": ["Royal Sky", "Royal cafe", "The MEP", "BBQ Nation"],
     "South Indian": ["Vaango", "Sagar Ratna", "Lazeezo Dosa"]
   };
-
+  var desc = {
+    Madhurima: "Lucknow's Top notch veg restaurant located at Gomtinagar",
+    Neelkanth: "Ambience will keep you intact",
+    "Moti Mahal": "Top notch service a go to place for north Indian Veg",
+    Sepia:
+      "The lights,decoration and delicacies will keep you in for a long time",
+    Rocca: "Roof top,pool by side and champagne",
+    "Tunday Kababi": "Lucknow is known for this.Kebabs are world famous",
+    KFC: "Famous for chickem wings all over the world",
+    "AL Baik": "Vinatge Lucknow.You just can't miss the roasted",
+    Dastarkhwan: "A feeling of navabs and their culture",
+    Acacia: "Situated at a very rachable place everyone go to hangout place",
+    "Chung FA": "Momos are irreplacable",
+    "Luk Jin": "Eat the chilly potato and fall in love with chillies",
+    "Mainland China": "Beijing is here",
+    "Royal Sky": "Once you go there you will always want to go there",
+    "Royal cafe": "Eat Basket chaat and Thank me later",
+    "The MEP": "Anything you want!",
+    "BBQ Nation": "Just about everything",
+    Vaango: "Dosas are available of different categories",
+    "Sagar Ratna": "Experience the best of south",
+    "Lazeezo Dosa": "The name satisfies the varieties"
+  };
   var rating = {
     Madhurima: "4/5",
     Neelkanth: "4.5/5",
@@ -64,6 +86,7 @@ export default function App() {
         return (
           <div key={item} className="Restaurant">
             <h3>{item}</h3>
+            <p>{desc[item]}</p>
             <small>{rating[item]}</small>
           </div>
         );
